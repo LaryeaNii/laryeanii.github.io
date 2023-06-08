@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(121, 192, 15);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.top-bar ul a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    font-weight: 500
+
+}
+.top-bar ul a:hover{
+    color: white;
+}
+
+#about{
+   background-color: black ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+}
+.about-container{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+h1{
+    color: azure;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+h2{
+    color: rgba(81, 192, 7, 0.884);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+}
+.projects-page{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(83, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+.pictures-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+#socials{
+    margin: 0;
+}
+.picture{
+    background-image: url(pexels-branimir-balogović-3959485.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 25vw;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#ngo{
+    position: relative;
+}
+
+#ecommerce{
+    background-image: url(pexels-karolina-grabowska-5632379.jpg);
+    position: relative;
+}
+#blog{
+    background-image: url(pexels-ovan-57690.jpg);
+    position: relative;
+}
+#tribute{
+    background-image: url(pexels-vitali-adutskevich-14634883.jpg);
+    position: relative;
+}
+#business{
+    background-image: url(pexels-lisa-fotios-1024359.jpg);
+    position: relative;
+}
+#school{
+    background-image: url(pexels-dids-2675061.jpg);
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .pictures-container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .picture{
+        width: 85vw;
+        margin-bottom: 10px;
+    }
+    .social-icons{
+        margin-bottom: 40px;
+    }
+
+  }
+
+  .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: sans-serif;
+    
+  }
+  .socials-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 111, 0);
+    width: 100%;
+    height: 100vh;
+    margin-top: -20px;
+    position: relative;
+  }
+  .findme{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .social-distancing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+    margin-right: 10px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+  }
+  .disclaimer{
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
