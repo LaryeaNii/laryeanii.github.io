@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: rgb(240, 138, 138); 
+    padding: 30px 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.head-konko{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    flex-wrap: wrap;
+    
+}
+
+.nav-konko{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+}
+.menu{
+    margin: 10px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.menu:hover{
+    color:rgb(109, 11, 11);
+}
+.enhance{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 13px;
+    margin-top: 80px;
+    width: 50%;
+}
+.bigger-picture{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.image{
+    margin-top: 30px;
+    margin-left: 90px;
+    width: 415px;
+    height: 360px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transform: scale(1.2); /* Adjust the scale value as needed */
+    transform-origin: left center;
+    overflow: hidden;
+}
+.click {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: pink;
+    color: rgb(126, 35, 35);
+    font-size: 22px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    margin: 18px;
+    margin-left: -5px;
+    transition: transform 0.3s ease-out;
+  }
+  .click:hover{
+    color: rgb(228, 98, 98);
+    transform: scale(1.1);
+  }
+  .bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 41px;
+    align-items: center;
+    padding: 30px;
+  }
+  .solid{
+    font: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px;    
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);    
+    transition: transform 0.3s ease-out;
+  }
+  .solid:hover{
+    transform: scale(1.1);
+  }
+
+  #red{
+    background-color: rgb(124, 4, 4);
+  }
+  #orange{
+    background-color: rgb(223, 149, 13);
+  }
+  #yellow{
+    background-color: rgb(177, 166, 14);
+  }
+  #green{
+    background-color: rgb(14, 92, 3);
+  }
+  #blue{
+    background-color: rgb(10, 74, 110);
+  }
+  .bar-title{
+    color: rgb(207, 93, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  #low-head{
+    padding: 30px;
+    background-color: rgb(233, 133, 200);
+  }
+  .teacher{
+    max-width: 50%;
+  }
+  
+  .imager{
+    margin-top: 30px;
+    width: 415px;
+    height: 260px;
+  }
+  .imager img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transform: scale(1.2); /* Adjust the scale value as needed */
+    transform-origin: left center;
+    overflow: hidden;
+  }
+  .big-picture{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .click2{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(126, 7, 100);
+    color: rgb(224, 118, 192);
+    font-size: 22px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: -5px;
+    transition: transform 0.3s ease-out;
+  }
+  .click2:hover{
+    color: rgb(235, 166, 223);
+    transform: scale(1.1);
+  }
+  .feet{
+    background-color: rgb(255, 36, 72);
+    padding: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .head {
+        padding: 20px; /* Adjusted padding values for small screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+      }
+    
+      #low-head {
+        margin-top: 20px; /* Add margin to separate from the image */
+      }
+  
+    .head-konko {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+    }
+  
+    .nav-konko {
+      margin-top: 10px; /* Add spacing between menu and logo */
+    }
+  
+    .menu {
+      margin: 5px; /* Reduce margin between menu items */
+    }
+    .big-picture {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add spacing between the items */
+      }
+      
+      .imager {
+        width: 70%; /* Adjust the width to fill the container */
+        height: auto; /* Maintain the aspect ratio */
+      }
+      
+      .teacher {
+        max-width: 100%; /* Adjust the width to fill the container */
+      }
+    
+  
+    .enhance {
+      margin-top: 20px; /* Adjusted margin-top value for small screens */
+      text-align: center; /* Center align the text */
+      width: 100%; /* Take up the full width of the container */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .bigger-picture {
+      flex-direction: column; /* Stack the image below the text */
+      align-items: center; /* Center align the items */
+      gap: 20px; /* Adjust the spacing between the text and image */
+    }
+  
+    .image {
+      margin-left: 0; /* Remove left margin */
+      width: 30%; /* Take up the full width of the container */
+      margin-top: -30px;
+      height: auto; /* Adjust the height based on the image aspect ratio */
+    }
+  
+    .click {
+      margin: 10px 2px; /* Adjust the margin for the buttons */
+    }
+  
+    .bars {
+      flex-direction: column; /* Stack the solid bars vertically */
+      gap: 20px; /* Adjust the spacing between the bars */
+      padding: 20px; /* Adjusted padding values for small screens */
+    }
+  
+    .bar-title {
+      font-size: 1.5em; /* Adjust the font size for small screens */
+    }
+    .feet {
+        padding: 20px; /* Adjusted padding values for small screens */
+        padding-left: 20px; /* Adjusted left padding for small screens */
+        padding-right: 20px; /* Adjusted right padding for small screens */
+        text-align: center; /* Center align the content */
+      }
+  }
+  
